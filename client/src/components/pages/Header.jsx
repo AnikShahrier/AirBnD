@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -23,7 +24,7 @@ const Header = () => {
 
             </button>
         </div>
-        <div className='mt-4 mr-4 flex items-center gap-2 box-border border-2  rounded-full py-2  px-3 hover:shadow-xl transition duration-300 ease-in-out'>
+        <Link to={'/login'} className='mt-4 mr-4 flex items-center gap-2 box-border border-2  rounded-full py-2  px-3 hover:shadow-xl transition duration-300 ease-in-out'>
             <button className='flex gap-2'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                 <path fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
@@ -34,7 +35,7 @@ const Header = () => {
 
 
             </button>
-        </div>
+        </Link>
 
     </div>
   )
